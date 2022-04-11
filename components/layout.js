@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-
+import Header from './Header'
 export default function Layout({title, keywords, description,children }) {
   return (
     <div>
@@ -9,7 +9,9 @@ export default function Layout({title, keywords, description,children }) {
             <meta name='description' content={description}/> 
             <meta name='keywords' content={keywords}/>
         </Head>
-
+        
+        {/* Header section  */}
+        <Header/>
         <div className=' m-60px m-auto max-w-lg' >
         {children}
         </div>
